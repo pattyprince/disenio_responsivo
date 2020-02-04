@@ -4,10 +4,12 @@
 
 body {
   font-family: monospace;
+  margin: 0;
 }
 
 .contenedor {
   width: 960px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(12 1fr);
   grid-template-rows: auto;
@@ -19,6 +21,7 @@ body {
   border-bottom: 1px solid gray;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+  border: solid 1px red;
 }
 
 .logo {
@@ -54,17 +57,16 @@ body {
 /* NOTICIAS  */
 .contenido {
   width: 960px;
-  margin: 0 auto;
-  grid-column: 1 / -1;
-  grid-row: 2 / 8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25% 25%;
   border: solid 1px green;
 }
 
 .listad-noticias {
   width: 680px;
-  border: solid 1px red;
   grid-column: 1 / 8;
-  grid-row: 2 / 8;
+  grid-row: 1 / -1;
 }
 
 .noticia {
@@ -86,7 +88,7 @@ body {
 .listado-izquierdo {
   width: 220px;
   grid-column: 8 / -1;
-  grid-row: auto;
+  grid-row: 1 / -1;
 }
 
 .cabecera-listado {
@@ -112,8 +114,6 @@ body {
 
 .noticias-destacadas {
   margin-bottom: 50px;
-  grid-column: 8 / 12;
-  grid-row: 1 / 12;
 }
 
 .noticias-destacadas img {
@@ -128,8 +128,6 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   grid-column: 1 / -1;
-  grid-row: 6 / 8;
-  border: solid 1px red;
 }
 
 .newsletter h2 {
@@ -189,6 +187,73 @@ body {
     grid-column: span 2;
   }
   .col-xs-1 {
+    grid-column: span 1;
+  }
+
+  .menu {
+    width: 100vw;
+  }
+
+  .listado-izquierdo {
+    display: none;
+  }
+
+  .listad-noticias {
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter {
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer {
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+  .col-sm-1 {
     grid-column: span 1;
   }
 }
