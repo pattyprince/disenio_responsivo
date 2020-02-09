@@ -1,3 +1,31 @@
+.newsletter {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  grid-column: 1 / -1;
+}
+
+.newsletter h2 {
+  font-size: px;
+}
+
+.group input,
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
 .footer {
   width: 960px;
   margin: 0 auto;
