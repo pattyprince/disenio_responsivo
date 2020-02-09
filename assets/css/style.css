@@ -51,7 +51,7 @@ body {
 }
 
 .input-menu {
-  width: 150px;
+  width: 80px;
   border-radius: 10px;
   padding-left: 10px;
 }
@@ -231,6 +231,12 @@ body {
 
   .navbar ul li a {
     margin-right: 5px;
+  }
+
+  .input-menu {
+    width: 80px;
+    border-radius: 10px;
+    padding-left: 10px;
   }
 
   .listado-izquierdo {
