@@ -46,6 +46,18 @@ img {
   padding-left: 10px;
 }
 
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.listad-noticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
 .newsletter {
   width: 100%;
   max-width: 1300px;
@@ -121,18 +133,6 @@ img {
 }
 
 /* Noticias  */
-.contenido {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
-}
-
-.listad-noticias {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
 .noticia {
   width: 260px;
   display: inline-block;
